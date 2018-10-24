@@ -1,0 +1,26 @@
+<table>
+    <thead>
+      <tr>
+          <th>employee Id</th>
+          <th>Name</th>
+          <th>Resson</th>
+          <th>Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {{xdata|json}}
+      <tr *ngFor="let ldata of leaveData">
+        <td>{{ldata.employeeId}}</td>
+        <td>{{ldata.name}}</td>
+        <td>{{ldata.resson}}</td>
+        <td>{{ldata.date}}</td>
+      </tr>
+      <!-- <tr>
+          <th>13372</th>
+          <th>imtiaz ali</th>
+          <th>fever</th>
+          <th>22/10/2018</th>
+      </tr> -->
+    </tbody>
+  </table>

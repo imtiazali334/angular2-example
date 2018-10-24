@@ -1,0 +1,22 @@
+<form #myform="ngForm" (ngSubmit)="postdata(myform.value)" >
+    <div class="row">
+        <h4>Request Leave</h4>
+        <div class="input-field col s10">
+          <input id="Employe_id" type="text" class="validate" [(ngModel)]="reql_id" name="employeeId">
+          <label for="first_name">Employee Id</label>
+        </div>
+        <div class="input-field col s10">
+          <input id="name" type="text" class="validate" [(ngModel)]="reql_name" name="name">
+          <label for="first_name">Name</label>
+        </div>
+        <div class="input-field col s10">
+          <input id="ression" type="text" class="validate" [(ngModel)]="reql_resson" name="resson">
+          <label for="first_name">Resson</label>
+        </div>
+        <div class="col s10">
+          <input id="date" type="date" class="validate" [(ngModel)]="reql_date" name="date">
+        </div>
+      </div>
+        <!-- <a class="waves-effect waves- blue darken-1 btn-flat" >Submit</a> -->
+        <button type="submit">submit</button>
+</form>

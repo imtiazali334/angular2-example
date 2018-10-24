@@ -1,0 +1,40 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">IMSS Pvt Ltd</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" class="waves-effect"><i class="material-icons left ">notifications</i>Notification</a></li>
+        <li><a href="#" class="waves-effect"><i class="material-icons right">logout</i>Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="row">
+  <div class="col s3 grey lighten-4">
+    <ul id="slide-out" class="side-nav fixed ">
+      <li><a class="waves-effect " routerLink="profile" ><i class="material-icons left">account_circle</i>Dashbord</a></li>
+      <li><a class="waves-effect " routerLink="leaveHistory"><i class="material-icons left">hourglass_full</i>Leave History</a></li>
+      <li><a class="waves-effect " routerLink="holidayList"><i class="material-icons left">toc</i>Holiday List</a></li>
+      <li><a class="waves-effect " routerLink="requestLeave"><i class="material-icons left">touch_app</i>Request Leave</a></li>
+      <li><a class="waves-effect " routerLink="updateLeave"><i class="material-icons left">Update</i>Update Leave</a></li>
+    </ul>
+  </div>
+  <div class="col s9">
+   <!-- <div class="card-panel">
+     <app-profile></app-profile>
+   </div> -->
+        <router-outlet></router-outlet>
+  </div>
+  
+</div>
+
+<!-- <footer class="page-footer fixed" style="z-index: -1">
+    <div class="container">
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer> -->
