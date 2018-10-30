@@ -1,0 +1,28 @@
+<form #myForm="ngForm" (ngSubmit)="onsubmit(myForm.value)">
+  <div class="row">
+    <div class="input-field col s10">
+      <input type="text" name="name" ngModel>
+      <label>Name</label>
+    </div>
+    <div class="input-field col s10">
+      <input type="email" name="email" ngModel>
+      <label>Email</label>
+    </div>
+    <div ngModelGroup="address">
+      <div class="input-field col s10">
+        <input type="text" name="street" ngModel>
+        <label>Street</label>
+      </div>
+      <div class="input-field col s10">
+        <input type="text" name="city" ngModel>
+        <label>city</label>
+      </div>
+      <div class="input-field col s10">
+        <input type="text" name="zip" ngModel>
+        <label>zip</label>
+      </div>
+    </div>
+
+  </div>
+  <button type="submit" class="waves-effect waves- blue lighten-3 btn-flat">Submit</button>
+</form>

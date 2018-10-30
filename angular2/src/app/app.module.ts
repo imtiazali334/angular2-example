@@ -16,15 +16,17 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { LeaveHistoryService} from './shared/leave-history.service';
 import { ReqLeaveService } from './shared/req-leave.service';
+import { UserFormComponent } from './user-form/user-form.component';
 
 export const routes:Routes=[
-  // {path:'',component:LoginComponent},
+  {path:'',component:LoginComponent},
   {path:'dashbord',component:DashbordComponent},
-  {path:"requestLeave",component:RequestLeaveComponent},
-  {path:"leaveHistory",component:LeaveHistoryComponent},
+  {path:'requestLeave',component:RequestLeaveComponent},
+  {path:'leaveHistory',component:LeaveHistoryComponent},
   {path:'updateLeave',component:UpdateLeaveComponent},
   {path:'holidayList',component:HolidayListComponent},
-  {path:'profile',component:ProfileComponent}
+  {path:'profile',component:ProfileComponent},
+  {path:'Userform',component:UserFormComponent}
 ]
 
 
@@ -38,7 +40,8 @@ export const routes:Routes=[
     HolidayListComponent,
     LeaveHistoryComponent,
     UpdateLeaveComponent,
-    ProfileComponent
+    ProfileComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
